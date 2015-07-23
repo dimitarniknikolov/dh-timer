@@ -15,12 +15,11 @@
      limitations under the License.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/root_widget"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/myshape"
-    android:orientation="horizontal" >
+              android:id="@+id/root_widget"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/myshape"
+              android:orientation="horizontal">
 
     <TextView
         android:id="@+id/update_days"
@@ -31,13 +30,13 @@
         android:text="00m\n00s"
         android:textColor="#111"
         android:textSize="36sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <ImageButton
         android:id="@+id/btn"
         style="@style/ImageButtonMTBTimerHolo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@android:drawable/ic_media_play" />
+        android:src="@android:drawable/ic_media_play"/>
 
 </LinearLayout>

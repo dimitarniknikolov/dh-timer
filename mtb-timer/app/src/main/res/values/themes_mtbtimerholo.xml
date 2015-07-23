@@ -5,7 +5,8 @@
 
     <style name="MTBTimerHolo" parent="@style/Theme.Mtbtimer">
         <item name="android:editTextStyle">@style/EditTextMTBTimerHolo</item>
-        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewMTBTimerHolo</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewMTBTimerHolo
+        </item>
         <item name="android:checkboxStyle">@style/CheckBoxMTBTimerHolo</item>
         <item name="android:radioButtonStyle">@style/RadioButtonMTBTimerHolo</item>
         <item name="android:buttonStyle">@style/ButtonMTBTimerHolo</item>

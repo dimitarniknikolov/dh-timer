@@ -15,8 +15,7 @@
      limitations under the License.
 -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/RootView" >
+             style="@style/RootView">
 
     <bg.tudle.mtbtimer.ui.view.MTBTextView
         android:id="@+id/timer_txt_time"
@@ -25,13 +24,13 @@
         android:layout_gravity="center"
         android:text="00m:00s"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <bg.tudle.mtbtimer.ui.view.MTBButton
         android:id="@+id/timer_btn_stop_timer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:text="@string/stop" />
+        android:text="@string/stop"/>
 
 </FrameLayout>
