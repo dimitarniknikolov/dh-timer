@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 Dimitar Nikolov
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+
+    <string name="app_name">MTB Timer</string>
+    <string name="ga_tracking_id">UA-35881330-2</string>
+
+    <!-- MTBMAin Activity -->
+    <string name="feedback">Feedback</string>
+    <string name="share">Share</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="timer">Timer</string>
+    <string name="settings">Settings</string>
+    <string name="error_">Error!</string>
+    <string name="text_to_speech_is_not_supported">Text to speech is not supported.</string>
+    <string name="ok">OK</string>
+    <string name="pre_start_duration">Pre Start Duration</string>
+    <string name="minute">minute</string>
+    <string name="minutes">minutes</string>
+    <string name="speech_step">Speech step</string>
+    <string name="about">About</string>
+    <string name="versioncode_">"VersionCode = "</string>
+    <string name="_versionname_">"\nVersionName = "</string>
+    <string name="send_from_my_android">\n\n----------\nsend from my Android</string>
+    <string name="mailto_dimitarniknikolov_gmail_com">mailto:dimitarniknikolov@gmail.com</string>
+    <string name="checkout_mtbtimer_for_android">Checkout MTBTimer for Android</string>
+    <string name="download_apk_link_">Download MTBTimer.apk link:\n\n</string>
+
+    <string-array name="pre_start_times">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="times">
+        <item>go go go</item>
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+        <item>seven</item>
+        <item>eight</item>
+        <item>nine</item>
+        <item>ten</item>
+        <item>eleven</item>
+        <item>twelve</item>
+        <item>thirteen</item>
+        <item>fourteen</item>
+        <item>fiveteen</item>
+        <item>sixteen</item>
+        <item>seventeen</item>
+        <item>eighteen</item>
+        <item>nineteen</item>
+        <item>twenty</item>
+        <item>twenty one</item>
+        <item>twenty two</item>
+        <item>twenty three</item>
+        <item>twenty four</item>
+        <item>twenty five</item>
+        <item>twenty six</item>
+        <item>twenty seven</item>
+        <item>twenty eight</item>
+        <item>twenty nine</item>
+        <item>thirty</item>
+        <item>thirty one</item>
+        <item>thirty two</item>
+        <item>thirty three</item>
+        <item>thirty four</item>
+        <item>thirty five</item>
+        <item>thirty six</item>
+        <item>thirty seven</item>
+        <item>thirty eight</item>
+        <item>thirty nine</item>
+        <item>fourty</item>
+        <item>fourty one</item>
+        <item>fourty two</item>
+        <item>fourty three</item>
+        <item>fourty four</item>
+        <item>fourty five</item>
+        <item>fourty six</item>
+        <item>fourty seven</item>
+        <item>fourty eight</item>
+        <item>fourty nine</item>
+        <item>fifty</item>
+        <item>fifty one</item>
+        <item>fifty two</item>
+        <item>fifty three</item>
+        <item>fifty four</item>
+        <item>fifty five</item>
+        <item>fifty six</item>
+        <item>fifty seven</item>
+        <item>fifty eight</item>
+        <item>fifty nine</item>
+    </string-array>
+    <string-array name="minutes_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+
+    <string name="s">s</string>
+    <string name="m">m</string>
+    <string name="sek_">sek.</string>
+
+    <!-- Settings Fragment -->
+    <string name="pre_start">Pre start</string>
+    <string name="on_run">On run</string>
+    <string name="final_">Final</string>
+
+</resources>

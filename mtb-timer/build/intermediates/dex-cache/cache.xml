@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/dimitar/.bin/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/home/dimitar/src/mtb-timer/mtb-timer/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-df92f0e1434822dbfbda9ba42967a51dc5f0665f.jar" />
+    </item>
+    <item
+        jar="/home/dimitar/src/mtb-timer/mtb-timer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="/home/dimitar/src/mtb-timer/mtb-timer/app/build/intermediates/pre-dexed/debug/classes-9acdd91e2e5cb3beb2ec88759da6842f97c9c0a9.jar" />
+    </item>
+    <item
+        jar="/home/dimitar/src/mtb-timer/mtb-timer/app/libs/libGoogleAnalyticsV2.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="6c48a1a1621e55c66fa6a381642916385c9dd781">
+        <dex dex="/home/dimitar/src/mtb-timer/mtb-timer/app/build/intermediates/pre-dexed/debug/libGoogleAnalyticsV2-13281e6e726eb4c20d78840ed293c77b48232c33.jar" />
+    </item>
+
+</items>

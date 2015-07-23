@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/dimitar/src/mtb-timer/mtb-timer/app/src/main/res/values-bg/strings.xml -->
+    <eat-comment/>
+    <string-array name="minutes_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="pre_start_times">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="times">
+        <item>go go go</item>
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+        <item>seven</item>
+        <item>eight</item>
+        <item>nine</item>
+        <item>ten</item>
+        <item>eleven</item>
+        <item>twelve</item>
+        <item>thirteen</item>
+        <item>fourteen</item>
+        <item>fiveteen</item>
+        <item>sixteen</item>
+        <item>seventeen</item>
+        <item>eighteen</item>
+        <item>nineteen</item>
+        <item>twenty</item>
+        <item>twenty one</item>
+        <item>twenty two</item>
+        <item>twenty three</item>
+        <item>twenty four</item>
+        <item>twenty five</item>
+        <item>twenty six</item>
+        <item>twenty seven</item>
+        <item>twenty eight</item>
+        <item>twenty nine</item>
+        <item>thirty</item>
+        <item>thirty one</item>
+        <item>thirty two</item>
+        <item>thirty three</item>
+        <item>thirty four</item>
+        <item>thirty five</item>
+        <item>thirty six</item>
+        <item>thirty seven</item>
+        <item>thirty eight</item>
+        <item>thirty nine</item>
+        <item>fourty</item>
+        <item>fourty one</item>
+        <item>fourty two</item>
+        <item>fourty three</item>
+        <item>fourty four</item>
+        <item>fourty five</item>
+        <item>fourty six</item>
+        <item>fourty seven</item>
+        <item>fourty eight</item>
+        <item>fourty nine</item>
+        <item>fifty</item>
+        <item>fifty one</item>
+        <item>fifty two</item>
+        <item>fifty three</item>
+        <item>fifty four</item>
+        <item>fifty five</item>
+        <item>fifty six</item>
+        <item>fifty seven</item>
+        <item>fifty eight</item>
+        <item>fifty nine</item>
+    </string-array>
+    <string name="_versionname_">"\nВерсия име = "</string>
+    <!-- From: file:/home/dimitar/src/mtb-timer/mtb-timer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values-bg/values.xml -->
+    <eat-comment/>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Придвижване към „Начало“"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Придвижване нагоре"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Още опции"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Вижте всички"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Изберете приложение"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Изчистване на заявката"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Заявка за търсене"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Търсене"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Изпращане на заявката"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Гласово търсене"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Споделяне със:"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Споделяне със: %s"</string>
+    <!-- From: file:/home/dimitar/src/mtb-timer/mtb-timer/app/src/main/res/values-bg/strings.xml -->
+    <eat-comment/>
+    <string name="about">Относно</string>
+    <string name="app_name">МТБ Таймер</string>
+    <string name="checkout_mtbtimer_for_android">Пробвай МТБТаймер за Android</string>
+    <string name="download_apk_link_">Download MTBTimer.apk link:\n\n</string>
+    <string name="error_">Грешка</string>
+    <string name="feedback">Обратна връзка</string>
+    <string name="final_">Финал</string>
+    <string name="m">м</string>
+    <string name="mailto_dimitarniknikolov_gmail_com">mailto:dimitarniknikolov@gmail.com</string>
+    <string name="minute">минута</string>
+    <string name="minutes">минути</string>
+    <string name="ok">ОК</string>
+    <string name="on_run">По време на спускане</string>
+    <string name="pre_start">Преди старт</string>
+    <string name="pre_start_duration">Време преди старт</string>
+    <string name="s">с</string>
+    <string name="sek_">сек.</string>
+    <string name="send_from_my_android">\n\n----------\nизпратено от моя Android</string>
+    <string name="settings">Настройки</string>
+    <string name="share">Сподели</string>
+    <string name="speech_step">Текс към говор</string>
+    <string name="start">Старт</string>
+    <string name="stop">Стоп</string>
+    <string name="text_to_speech_is_not_supported">Текст към говор не се поддържа.</string>
+    <string name="timer">Таймер</string>
+    <string name="versioncode_">"Версия код = "</string>
+</resources>

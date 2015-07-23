@@ -1,0 +1,4 @@
+/home/dimitar/src/mtb-timer/mtb-timer/app/build/intermediates/classes/debug
+/home/dimitar/src/mtb-timer/mtb-timer/app/build/intermediates/pre-dexed/debug/libGoogleAnalyticsV2-13281e6e726eb4c20d78840ed293c77b48232c33.jar
+/home/dimitar/src/mtb-timer/mtb-timer/app/build/intermediates/pre-dexed/debug/classes-9acdd91e2e5cb3beb2ec88759da6842f97c9c0a9.jar
+/home/dimitar/src/mtb-timer/mtb-timer/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-df92f0e1434822dbfbda9ba42967a51dc5f0665f.jar

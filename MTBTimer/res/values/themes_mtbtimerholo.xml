@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="MTBTimerHolo" parent="@style/Theme.Mtbtimer">
+        <item name="android:editTextStyle">@style/EditTextMTBTimerHolo</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewMTBTimerHolo</item>
+        <item name="android:checkboxStyle">@style/CheckBoxMTBTimerHolo</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonMTBTimerHolo</item>
+        <item name="android:buttonStyle">@style/ButtonMTBTimerHolo</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonMTBTimerHolo</item>
+        <item name="android:spinnerStyle">@style/SpinnerMTBTimerHolo</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemMTBTimerHolo</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarMTBTimerHolo</item>
+        <item name="android:seekBarStyle">@style/SeekBarMTBTimerHolo</item>
+        <item name="android:ratingBarStyle">@style/RatingBarMTBTimerHolo</item>
+        <item name="android:ratingBarStyleIndicator">@style/RatingBarBigMTBTimerHolo</item>
+        <item name="android:ratingBarStyleSmall">@style/RatingBarSmallMTBTimerHolo</item>
+        <item name="android:buttonStyleToggle">@style/ToggleMTBTimerHolo</item>
+        <item name="android:listViewStyle">@style/ListViewMTBTimerHolo</item>
+        <item name="android:listViewWhiteStyle">@style/ListViewMTBTimerHolo.White</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemMTBTimerHolo</item>
+    </style>
+
+</resources>

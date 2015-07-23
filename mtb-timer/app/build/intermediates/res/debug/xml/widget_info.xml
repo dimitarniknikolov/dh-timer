@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget_layout"
+    android:minHeight="102dp"
+    android:minWidth="300dp"
+    android:updatePeriodMillis="10000000" >
+
+    <!-- 1800000 = 30 mins -->
+
+</appwidget-provider><!-- From: file:/home/dimitar/src/mtb-timer/mtb-timer/app/src/main/res/xml/widget_info.xml -->

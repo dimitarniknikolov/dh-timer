@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 Dimitar Nikolov
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootView"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <bg.tudle.mtbtimer.ui.view.MTBTextView
+        style="@style/SettigsTxtHeader"
+        android:text="@string/pre_start" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <bg.tudle.mtbtimer.ui.view.MTBTextView
+            style="@style/SettigsTxtLabel"
+            android:text="@string/pre_start_duration" />
+
+        <Spinner
+            android:id="@+id/settings_spn_pre_start_duration"
+            style="@style/SettingsSpinner" />
+
+        <bg.tudle.mtbtimer.ui.view.MTBTextView
+            style="@style/SettingsTxtTimeUnit"
+            android:text="@string/s" />
+    </LinearLayout>
+
+    <bg.tudle.mtbtimer.ui.view.MTBTextView
+        style="@style/SettigsTxtHeader"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/on_run" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <bg.tudle.mtbtimer.ui.view.MTBTextView
+            style="@style/SettigsTxtLabel"
+            android:text="@string/speech_step" />
+
+        <Spinner
+            android:id="@+id/settings_spn_speech_step"
+            style="@style/SettingsSpinner" />
+
+        <bg.tudle.mtbtimer.ui.view.MTBTextView
+            style="@style/SettingsTxtTimeUnit"
+            android:text="@string/s" />
+    </LinearLayout>
+
+    <bg.tudle.mtbtimer.ui.view.MTBTextView
+        style="@style/SettigsTxtHeader"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/final_" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <bg.tudle.mtbtimer.ui.view.MTBTextView
+            style="@style/SettigsTxtLabel"
+            android:text="@string/start" />
+
+        <Spinner
+            android:id="@+id/settings_spn_start_final_minutes"
+            style="@style/SettingsSpinner"
+            android:entries="@array/minutes_array" />
+
+        <bg.tudle.mtbtimer.ui.view.MTBTextView
+            style="@style/SettingsTxtTimeUnit"
+            android:paddingRight="8dp"
+            android:text="@string/m" />
+
+        <Spinner
+            android:id="@+id/settings_spn_start_final_seconds"
+            style="@style/SettingsSpinner" />
+
+        <bg.tudle.mtbtimer.ui.view.MTBTextView
+            style="@style/SettingsTxtTimeUnit"
+            android:text="@string/s" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <bg.tudle.mtbtimer.ui.view.MTBTextView
+            style="@style/SettigsTxtLabel"
+            android:text="@string/stop" />
+
+        <Spinner
+            android:id="@+id/settings_spn_stop_final_minutes"
+            style="@style/SettingsSpinner"
+            android:entries="@array/minutes_array" />
+
+        <bg.tudle.mtbtimer.ui.view.MTBTextView
+            style="@style/SettingsTxtTimeUnit"
+            android:paddingRight="8dp"
+            android:text="@string/m" />
+
+        <Spinner
+            android:id="@+id/settings_spn_stop_final_seconds"
+            style="@style/SettingsSpinner" />
+
+        <bg.tudle.mtbtimer.ui.view.MTBTextView
+            style="@style/SettingsTxtTimeUnit"
+            android:text="@string/s" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/home/dimitar/src/mtb-timer/mtb-timer/app/src/main/res/layout/fragment_settings.xml -->
