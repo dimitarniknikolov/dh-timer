@@ -43,6 +43,7 @@ public interface MTBConstants {
     public static final int DEFAULT_FINAL_STOP_SEC = 10;
 
     // Download link for MTBTimer.apk file
-    public static final String DOWNLOAD_APP_LINK = "https://www.dropbox.com/s/nwxhl4ccvj42fem/MTBTimer.apk";
+    public static final String DOWNLOAD_APP_LINK =
+        "https://www.dropbox.com/s/nwxhl4ccvj42fem/MTBTimer.apk";
 
 }

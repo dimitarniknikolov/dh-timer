@@ -18,11 +18,12 @@ package bg.tudle.mtbtimer.ui.fragment;
 
 import android.app.Activity;
 import android.support.v4.app.Fragment;
-import bg.tudle.mtbtimer.MTBConstants;
-import bg.tudle.mtbtimer.R;
 
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;
+
+import bg.tudle.mtbtimer.MTBConstants;
+import bg.tudle.mtbtimer.R;
 
 public class MTBBaseFragment extends Fragment implements MTBConstants {
 

@@ -40,7 +40,7 @@ public class MTBButton extends Button {
 
     private void setFont(Context context) {
         Typeface tf = Typeface.createFromAsset(context.getAssets(),
-                "fonts/Roboto-Regular.ttf");
+                                               "fonts/Roboto-Regular.ttf");
         setTypeface(tf);
     }
 }

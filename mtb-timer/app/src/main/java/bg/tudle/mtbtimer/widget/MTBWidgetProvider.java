@@ -25,6 +25,7 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.widget.RemoteViews;
+
 import bg.tudle.mtbtimer.MTBConstants;
 import bg.tudle.mtbtimer.R;
 import bg.tudle.mtbtimer.service.MTBTimerService;
@@ -43,7 +44,7 @@ public class MTBWidgetProvider extends AppWidgetProvider {
         super.onUpdate(context, appWidgetManager, appWidgetIds);
         for (int appWidgetId : appWidgetIds) {
             final RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
-                    R.layout.widget_layout);
+                                                            R.layout.widget_layout);
 
             // Register an onClickListener
             final Intent intent = new Intent(context, MTBWidgetProvider.class);
@@ -52,13 +53,13 @@ public class MTBWidgetProvider extends AppWidgetProvider {
             intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, appWidgetIds);
 
             final PendingIntent pendingIntent = PendingIntent.getBroadcast(context,
-                    0, intent, 0);
+                                                                           0, intent, 0);
             remoteViews.setOnClickPendingIntent(R.id.btn, pendingIntent);
 
             final Intent actovity = new Intent(context, MTBMainActivity.class);
 
             final PendingIntent pendingActivity = PendingIntent.getActivity(context,
-                    0, actovity, 0);
+                                                                            0, actovity, 0);
             remoteViews.setOnClickPendingIntent(R.id.root_widget, pendingActivity);
 
             appWidgetManager.updateAppWidget(appWidgetId, remoteViews);
@@ -76,10 +77,10 @@ public class MTBWidgetProvider extends AppWidgetProvider {
 
             if (!mPrefs.getBoolean(MTBConstants.PREF_KEY_IS_RUNNING, false)) {
                 context.startService(new Intent(context.getApplicationContext(),
-                        MTBTimerService.class));
+                                                MTBTimerService.class));
             } else {
                 context.stopService(new Intent(context.getApplicationContext(),
-                        MTBTimerService.class));
+                                               MTBTimerService.class));
             }
         }
         super.onReceive(context, intent);

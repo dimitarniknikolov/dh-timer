@@ -28,13 +28,13 @@ import android.speech.tts.TextToSpeech.OnInitListener;
 import android.util.Log;
 import android.widget.RemoteViews;
 
-import bg.tudle.mtbtimer.MTBConstants;
-import bg.tudle.mtbtimer.R;
-import bg.tudle.mtbtimer.widget.MTBWidgetProvider;
-
 import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import bg.tudle.mtbtimer.MTBConstants;
+import bg.tudle.mtbtimer.R;
+import bg.tudle.mtbtimer.widget.MTBWidgetProvider;
 
 public class MTBTimerService extends Service implements MTBConstants, OnInitListener {
 
@@ -89,12 +89,12 @@ public class MTBTimerService extends Service implements MTBConstants, OnInitList
     public void onInit(int status) {
         if (status == TextToSpeech.SUCCESS) {
             Locale[] langs = {
-                    Locale.UK, Locale.US
+                Locale.UK, Locale.US
             };
             for (Locale lang : langs) {
                 int result = mTextToSpeech.setLanguage(lang);
                 if ((result != TextToSpeech.LANG_MISSING_DATA)
-                        && (result != TextToSpeech.LANG_NOT_SUPPORTED)) {
+                    && (result != TextToSpeech.LANG_NOT_SUPPORTED)) {
                     startTimer();
                     break;
                 } else {
@@ -112,20 +112,20 @@ public class MTBTimerService extends Service implements MTBConstants, OnInitList
     // ---------------------------------------------------------------------------------------------
     private void setTimeMembersFromPrefs() {
         mSpeechStepDuration = mPrefs.getInt(PREF_KEY_SPEECH_STEP_DURATION,
-                DEFAULT_SPEECH_STEP_DURATION);
+                                            DEFAULT_SPEECH_STEP_DURATION);
         mFinalStartMin = mPrefs.getInt(PREF_KEY_FINAL_START_MIN,
-                DEFAULT_FINAL_START_MIN);
+                                       DEFAULT_FINAL_START_MIN);
         mFinalStartSec = mPrefs.getInt(PREF_KEY_FINAL_START_SEC,
-                DEFAULT_FINAL_START_SEC);
+                                       DEFAULT_FINAL_START_SEC);
         mFinalStopMin = mPrefs.getInt(PREF_KEY_FINAL_STOP_MIN,
-                DEFAULT_FINAL_STOP_MIN);
+                                      DEFAULT_FINAL_STOP_MIN);
         mFinalStopSec = mPrefs.getInt(PREF_KEY_FINAL_STOP_SEC,
-                DEFAULT_FINAL_STOP_SEC);
+                                      DEFAULT_FINAL_STOP_SEC);
     }
 
     private void startTimer() {
         int preStartDuration = mPrefs.getInt(PREF_KEY_PRE_START_DURATION,
-                DEFAULT_PRE_START_DURATION);
+                                             DEFAULT_PRE_START_DURATION);
         mPrefs.edit().putInt(PREF_KEY_SECONDS, preStartDuration * -1).commit();
         final TimerTask updateTimerValuesTask = new TimerTask() {
             @Override
@@ -137,11 +137,11 @@ public class MTBTimerService extends Service implements MTBConstants, OnInitList
         timer.schedule(updateTimerValuesTask, 1000, 1000);
         AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(getApplicationContext());
         ComponentName thisWidget = new ComponentName(getApplicationContext(),
-                MTBWidgetProvider.class);
+                                                     MTBWidgetProvider.class);
         int[] allWidgetIds = appWidgetManager.getAppWidgetIds(thisWidget);
         for (int widgetId : allWidgetIds) {
             RemoteViews remoteViews = new RemoteViews(getApplicationContext().getPackageName(),
-                    R.layout.widget_layout);
+                                                      R.layout.widget_layout);
             remoteViews.setImageViewResource(R.id.btn, android.R.drawable.ic_media_pause);
             appWidgetManager.updateAppWidget(widgetId, remoteViews);
         }
@@ -155,11 +155,11 @@ public class MTBTimerService extends Service implements MTBConstants, OnInitList
         mPrefs.edit().putBoolean(PREF_KEY_IS_RUNNING, false).commit();
         AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(getApplicationContext());
         ComponentName thisWidget = new ComponentName(getApplicationContext(),
-                MTBWidgetProvider.class);
+                                                     MTBWidgetProvider.class);
         int[] allWidgetIds = appWidgetManager.getAppWidgetIds(thisWidget);
         for (int widgetId : allWidgetIds) {
             RemoteViews remoteViews = new RemoteViews(getApplicationContext().getPackageName(),
-                    R.layout.widget_layout);
+                                                      R.layout.widget_layout);
             remoteViews.setImageViewResource(R.id.btn, android.R.drawable.ic_media_play);
             appWidgetManager.updateAppWidget(widgetId, remoteViews);
         }
@@ -195,18 +195,18 @@ public class MTBTimerService extends Service implements MTBConstants, OnInitList
     private void updateWidgets() {
         AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(getApplicationContext());
         ComponentName thisWidget = new ComponentName(getApplicationContext(),
-                MTBWidgetProvider.class);
+                                                     MTBWidgetProvider.class);
         int[] allWidgetIds = appWidgetManager.getAppWidgetIds(thisWidget);
         for (int widgetId : allWidgetIds) {
             RemoteViews remoteViews = new RemoteViews(getApplicationContext().getPackageName(),
-                    R.layout.widget_layout);
+                                                      R.layout.widget_layout);
             int mCurrentsecond = mPrefs.getInt(PREF_KEY_SECONDS, 0);
             String timeStr = String
-                    .format("%02d", (mCurrentsecond / 60))
-                    + getString(R.string.m);
+                .format("%02d", (mCurrentsecond / 60))
+                + getString(R.string.m);
             timeStr += "\n" + String
-                    .format("%02d", (mCurrentsecond % 60))
-                    + getString(R.string.s);
+                .format("%02d", (mCurrentsecond % 60))
+                + getString(R.string.s);
             remoteViews.setTextViewText(R.id.update_days, timeStr);
             appWidgetManager.updateAppWidget(widgetId, remoteViews);
         }
@@ -227,9 +227,9 @@ public class MTBTimerService extends Service implements MTBConstants, OnInitList
             // bigger than one minute
             String minSpeech = mSecondsArray[minute];
             text = minSpeech
-                    + " "
-                    + (minute > 1 ? getString(R.string.minutes)
-                            : getString(R.string.minute));
+                + " "
+                + (minute > 1 ? getString(R.string.minutes)
+                : getString(R.string.minute));
         } else {
             // exactly minutes
             second = second % 60;
@@ -248,9 +248,9 @@ public class MTBTimerService extends Service implements MTBConstants, OnInitList
             // bigger than one minute
             String minSpeech = mSecondsArray[minute];
             text = minSpeech
-                    + " "
-                    + (minute > 1 ? getString(R.string.minutes)
-                            : getString(R.string.minute));
+                + " "
+                + (minute > 1 ? getString(R.string.minutes)
+                : getString(R.string.minute));
         } else {
             // exactly minutes
             second = second % 60;

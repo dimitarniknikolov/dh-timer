@@ -28,11 +28,12 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
 import bg.tudle.mtbtimer.R;
 import bg.tudle.mtbtimer.service.MTBTimerService;
 
 public class MTBTimerFragment extends MTBBaseFragment implements
-        OnClickListener, OnSharedPreferenceChangeListener {
+    OnClickListener, OnSharedPreferenceChangeListener {
 
     private static final String TAG = MTBSettingsFragment.class.getSimpleName();
 
@@ -57,7 +58,7 @@ public class MTBTimerFragment extends MTBBaseFragment implements
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+                             Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_timer, container, false);
     }
 
@@ -87,7 +88,7 @@ public class MTBTimerFragment extends MTBBaseFragment implements
             mPrefs.edit().putInt(PREF_KEY_SECONDS, 0).commit();
         }
         mTracker.sendTiming("StopTimer", mCurrentsecond * 1000, "Lap",
-                "stop timer onDestroy()");
+                            "stop timer onDestroy()");
         super.onDestroy();
     }
 
@@ -118,12 +119,12 @@ public class MTBTimerFragment extends MTBBaseFragment implements
     private void displayTime() {
         mCurrentsecond = mPrefs.getInt(PREF_KEY_SECONDS, 0);
         String timeStr = String
-                .format("%02d", (mCurrentsecond / 60))
-                + getString(R.string.m) + ":";
+            .format("%02d", (mCurrentsecond / 60))
+            + getString(R.string.m) + ":";
         mTxtTime.setText(timeStr);
         timeStr += String
-                .format("%02d", (mCurrentsecond % 60))
-                + getString(R.string.s);
+            .format("%02d", (mCurrentsecond % 60))
+            + getString(R.string.s);
         mTxtTime.setText(timeStr);
     }
 
@@ -151,7 +152,7 @@ public class MTBTimerFragment extends MTBBaseFragment implements
                     mBtnStartStop.setText(R.string.start);
                     mTracker.sendEvent("UI", "Click", "onStop", -1l);
                     mTracker.sendTiming("StopTimer", mCurrentsecond * 1000, "Lap",
-                            "Force Finishing");
+                                        "Force Finishing");
                 } else {
                     startTimer();
                     mBtnStartStop.setText(R.string.stop);

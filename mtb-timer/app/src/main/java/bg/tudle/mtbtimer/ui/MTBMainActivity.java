@@ -33,19 +33,17 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.analytics.tracking.android.EasyTracker;
+
 import bg.tudle.mtbtimer.MTBConstants;
 import bg.tudle.mtbtimer.R;
-import bg.tudle.mtbtimer.R.id;
-import bg.tudle.mtbtimer.R.menu;
-import bg.tudle.mtbtimer.R.string;
 import bg.tudle.mtbtimer.ui.fragment.MTBSettingsFragment;
 import bg.tudle.mtbtimer.ui.fragment.MTBTimerFragment;
 
-import com.google.analytics.tracking.android.EasyTracker;
-
 /**
- * @author Dimitar Nikolov 
+ * @author Dimitar Nikolov
  */
+
 /**
  * An Activity that contains two Fragments. One for timing and one for settings.
  */
@@ -92,19 +90,19 @@ public class MTBMainActivity extends ActionBarActivity implements MTBConstants, 
         switch (item.getItemId()) {
             case R.id.menu_feedback:
                 intent.putExtra(Intent.EXTRA_TEXT,
-                        getString(R.string.send_from_my_android));
+                                getString(R.string.send_from_my_android));
                 intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name));
                 intent.setData(Uri
-                        .parse(getString(R.string.mailto_dimitarniknikolov_gmail_com)));
+                                   .parse(getString(R.string.mailto_dimitarniknikolov_gmail_com)));
                 break;
             case R.id.menu_share:
                 intent.putExtra(
-                        Intent.EXTRA_TEXT,
-                        getString(R.string.download_apk_link_)
-                                + DOWNLOAD_APP_LINK
-                                + getString(R.string.send_from_my_android));
+                    Intent.EXTRA_TEXT,
+                    getString(R.string.download_apk_link_)
+                        + DOWNLOAD_APP_LINK
+                        + getString(R.string.send_from_my_android));
                 intent.putExtra(Intent.EXTRA_SUBJECT,
-                        getString(R.string.checkout_mtbtimer_for_android));
+                                getString(R.string.checkout_mtbtimer_for_android));
                 intent.setData(Uri.parse("mailto:"));
                 break;
             case R.id.menu_about:
@@ -112,10 +110,10 @@ public class MTBMainActivity extends ActionBarActivity implements MTBConstants, 
                     PackageManager manager = getPackageManager();
                     PackageInfo info = manager.getPackageInfo(getPackageName(), 0);
                     String aboutMsg = getString(R.string.versioncode_) + info.versionCode
-                            + getString(R.string._versionname_) + info.versionName;
+                        + getString(R.string._versionname_) + info.versionName;
                     AlertDialog.Builder builder = new AlertDialog.Builder(this);
                     builder.setTitle(R.string.app_name).setMessage(aboutMsg)
-                            .setNeutralButton(R.string.ok, null).show();
+                           .setNeutralButton(R.string.ok, null).show();
                 } catch (NameNotFoundException e) {
                     e.printStackTrace();
                 }
@@ -136,9 +134,9 @@ public class MTBMainActivity extends ActionBarActivity implements MTBConstants, 
 
         // For each of the sections in the app, add a tab to the action bar.
         actionBar.addTab(actionBar.newTab().setText(R.string.timer)
-                .setTabListener(this));
+                                  .setTabListener(this));
         actionBar.addTab(actionBar.newTab().setText(R.string.settings)
-                .setTabListener(this));
+                                  .setTabListener(this));
     }
 
     // ---------------------------------------------------------------------------------------------
